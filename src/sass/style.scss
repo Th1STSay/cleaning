@@ -1,0 +1,16 @@
+@import "reset_style.scss";
+@import "base/func";
+@import "fonts/font";
+@import "base/variables";
+@import "base/animation";
+@import "base/ui";
+
+@import "../css/swiper-bundle.css";
+@import "../css/bootstrap.min.css";
+//@import "libs/slick-theme.scss";
+@import "libs/slick.scss";
+
+
+@import "components/hero-home";
+@import "components/hero-page-template";
+
