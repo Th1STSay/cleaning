@@ -1,3 +1,33 @@
-.body{
-    background-color: red !important;
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: #064087;
+
+    &__navigation{
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+        &-logo{
+
+            a{
+                img{
+                    
+                }
+            }
+        }
+
+        &-menu{
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        &-contact{
+
+        }
+    }
 }
