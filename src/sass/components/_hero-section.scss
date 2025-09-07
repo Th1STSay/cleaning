@@ -1,0 +1,75 @@
+.hero {
+    padding: 200px 0 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &::before{
+        content: '';
+        z-index: 5;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(
+            #112146 0%,
+            rgba(17, 33, 70, 0.65) 65%,
+            transparent 100%
+        );
+    }
+    
+
+    &__content {
+        width: 100%;
+        padding: 0 20px;
+        z-index: 10;
+
+        &-text {
+            margin-bottom: 40px;
+
+            h1 {
+                color: #fff;
+                font-size: 56px;
+                margin-bottom: 35px;
+            }
+
+            p {
+                color: #fff;
+                font-size: 18px;
+                font-weight: 200;
+            }
+        }
+
+        &-btns{
+            display: inline-flex;
+            align-items: center;
+            column-gap: 20px;
+            max-height: 56px;
+
+
+            .hero-number{
+                background-color: #0A6D4F;
+                color: #fff;
+                padding: 15px;
+                border-radius: 12px;
+                display: inline-flex;
+                align-items: center;
+
+                img{
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 5px;
+                }
+            }
+
+            .hero-reviews{
+
+                img{
+                    max-height: 54px;
+                }
+            }
+        }
+    }
+}
