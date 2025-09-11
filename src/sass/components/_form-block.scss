@@ -1,7 +1,8 @@
 .form{
-    display: flex;
+    display: grid;
     justify-content: center;
     margin: 0 auto;
+    position: relative;
 
     &__content{
         max-width: 1140px;
@@ -12,6 +13,12 @@
         padding: 40px;
         border-radius: 8px;
         box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        position: absolute;
+        background-color: #fff;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
 
         &-text{
             h1{
@@ -30,8 +37,8 @@
         &-form{
 
             &-forms{
-                display: flex;
-                flex-direction: row;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
                 gap: 16px;
                 padding-bottom: 15px;
 
@@ -47,6 +54,8 @@
                         font-weight: 400;
                         width: 330px;
                         height: 60px;
+                        border: 1px solid #000;
+                        border-radius: 12px;
                     }
                 }
 
@@ -62,6 +71,8 @@
                         font-weight: 400;
                         width: 330px;
                         height: 60px;
+                        border: 1px solid #000;
+                        border-radius: 12px;
                     }
                 }
 
@@ -75,8 +86,9 @@
                     margin-top: 24px;
                     border-radius: 8px;
 
-                    a{
-                        text-decoration: none;
+                    button{
+                        background: none;
+                        border: none;
                         color: white;
                         font-size: 18px;
                         font-weight: 700;
@@ -95,10 +107,12 @@
                     font-weight: 700;
                     padding-top: 5px;
                     padding-bottom: 5px;
+                    white-space: nowrap;
                 }
                 input{
                     width: 18px;
                     height: 18px;
+                    padding-left: 15px;
                     accent-color: green;
                 }
                 input[type="checkbox"] {
