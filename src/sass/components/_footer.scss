@@ -64,6 +64,7 @@
 
                 &-mail{
                     display: flex;
+                    align-items: center;
                     flex-direction: row;
                     gap: 10px;
                     padding-bottom: 25px;
@@ -74,6 +75,12 @@
                     flex-direction: row;
                     gap: 10px;
                     padding-bottom: 25px;
+
+                    img{
+                        width: 28px;
+                        height: 28px;
+                        margin-left: -2px;
+                    }
                 }
             }
 
@@ -86,10 +93,31 @@
                 justify-content: center;
                 gap: 9px;
                 border-radius: 4px;
+                padding-top: 14px;
+                padding-bottom: 14px;
+
+                button{
+                    background: none;
+                        border: none;
+                        color: white;
+                }
+
+                a{
+
+                    img{
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
             }
 
             &-socialmedias{
-                padding-top: 25px;
+                padding-top: 20px;
+
+                a{
+                    display: flex;
+                    gap: 20px;
+                }
             }
 
             a{
