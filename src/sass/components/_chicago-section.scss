@@ -1,0 +1,80 @@
+.chicago{
+    display: flex;
+    justify-content: center;
+    background-color: #064087;
+    color: white;
+
+    &__content{
+        max-width: 1140px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 100px;
+
+        &-main{
+
+            &-head{
+
+                &-text{
+                    font-weight: 700;
+                    font-size: 40px;
+                    padding-bottom: 70px;
+                }
+
+                &-cities{
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-weight: 400;
+                    font-size: 24px;
+                    gap: 25px;
+                    padding-bottom: 164px;
+
+                    &-Naperville{
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                    }
+
+                    &-Aurora{
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                    }
+
+                    &-Elmhurst{
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                    }
+
+                    &-Des-Plaines{
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                    }
+
+                    &-Arlington-Heights{
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                    }
+
+                    &-Glenview-Park-Ridge{
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                    }
+
+                    &-Downers-Grove{
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                    }
+                }
+            }
+        }
+
+        &-map{
+            padding-left: 54px;
+        }
+    }
+}
