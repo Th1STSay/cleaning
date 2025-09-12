@@ -1,18 +1,21 @@
-.before-and-after{
+.client-reviews{
     display: flex;
     justify-content: center;
+    height: 600px;
+    background-color: #e9f6ff;
 
     &__content{
-        padding-top: 90px;
-        padding-bottom: 80px;
+        height: 430px;
+        padding-top: 70px;
+        padding-bottom: 100px;
+        max-width: 1140px;
 
         &-head{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             font-size: 40px;
-            font-weight: 700;
-            padding-bottom: 52px;
+            padding-bottom: 50px;
 
             &-btns{
                 display: flex;
@@ -36,6 +39,20 @@
                     border-radius: 8px;
                 }
             }
+        }
+
+        &-reviews{
+            display: flex;
+            gap: 41px;
+            font-weight: 400;
+            font-size: 18px;
+            font-weight: 400;
+            padding-bottom: 35px;
+        }
+
+        &-google-reviews{
+            display: flex;
+            justify-content: center;
         }
     }
 }
