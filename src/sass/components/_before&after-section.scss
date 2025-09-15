@@ -1,38 +1,46 @@
-.before-and-after{
+.before-and-after {
     display: flex;
     justify-content: center;
 
-    &__content{
+    &__content {
         padding-top: 90px;
         padding-bottom: 80px;
 
-        &-head{
-            display: flex;
+        &-title {
+            display: inline-flex;
             flex-direction: row;
             justify-content: space-between;
             font-size: 40px;
             font-weight: 700;
             padding-bottom: 52px;
+        }
 
-            &-btns{
-                display: flex;
-                align-items: flex-end;
+        &-buttons {
+            display: inline-flex;
+            float: right;
+
+            &-container {
+                display: inline-flex;
                 gap: 20px;
-                
-                .left{
-                    display: flex;
+
+                .left {
+                    display: inline-flex;
                     align-items: center;
                     width: 40px;
                     height: 40px;
-                    border: rgba(10, 109, 79, 1), 1px solid;
+                    border:
+                        rgba(10, 109, 79, 1),
+                        1px solid;
                     border-radius: 8px;
                 }
-                .right{
-                    display: flex;
+                .right {
+                    display: inline-flex;
                     align-items: center;
                     width: 40px;
                     height: 40px;
-                    border: rgba(10, 109, 79, 1), 1px solid;
+                    border:
+                        rgba(10, 109, 79, 1),
+                        1px solid;
                     border-radius: 8px;
                 }
             }
