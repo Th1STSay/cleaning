@@ -1,0 +1,27 @@
+.client-reviews {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    background-color: #e9f6ff;
+
+    &__content {
+        height: 530px;
+        padding-top: 70px;
+        padding-bottom: 100px;
+        max-width: 1140px;
+
+        &-reviews {
+            display: flex;
+            font-weight: 400;
+            font-size: 18px;
+            font-weight: 400;
+            padding-bottom: 35px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

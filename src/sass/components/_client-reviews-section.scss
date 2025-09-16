@@ -1,6 +1,7 @@
 .client-reviews {
     display: flex;
     justify-content: center;
+    gap: 30px;
     height: 600px;
     background-color: #e9f6ff;
 
@@ -62,6 +63,14 @@
         &-google-reviews {
             display: flex;
             justify-content: center;
+            padding-top: 30px;
         }
+    }
+
+    &__google-reviews{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+        max-width: 1140px;
     }
 }
