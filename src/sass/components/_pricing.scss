@@ -17,7 +17,6 @@
 
         &-price {
             &-title {
-                height: 125px;
 
                 h2 {
                     font-size: 40px;
@@ -49,6 +48,14 @@
                     -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.55);
                     border-radius: 12px;
 
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                        height: auto;
+
+                    }
+
+
+
                     img {
                         margin-right: 15px;
                     }
@@ -71,20 +78,91 @@
 
                     &-text1 {
                         margin-right: 113px;
+
+                        @media screen and (max-width: 768px) {
+                            margin-right: 0;
+
+                        }
+
+                        h3 {
+                            @media screen and (max-width: 768px) {
+                                font-size: 22px !important;
+                            }
+                        }
+
+                        p {
+                            @media screen and (max-width: 768px) {
+                                font-size: 15px;
+                            }
+                        }
+
                     }
 
                     &-text2 {
                         margin-right: 141px;
+
+                        @media screen and (max-width: 768px) {
+                            margin-right: 0;
+                        }
+
+                        h3 {
+                            @media screen and (max-width: 768px) {
+                                font-size: 22px !important;
+                            }
+                        }
+
+                        p {
+                            @media screen and (max-width: 768px) {
+                                font-size: 15px;
+                            }
+                        }
                     }
 
                     &-text3 {
                         margin-right: 75px;
+
+                        @media screen and (max-width: 768px) {
+                            margin-right: 0;
+                        }
+
+                        h3 {
+                            @media screen and (max-width: 768px) {
+                                font-size: 22px !important;
+                            }
+                        }
+
+                        p {
+                            @media screen and (max-width: 768px) {
+                                font-size: 15px;
+                            }
+                        }
                     }
 
                     &-price {
                         display: flex;
                         flex-direction: column;
                         width: 120px;
+
+                        @media screen and (max-width: 768px) {
+                            flex: 1;
+
+
+                        }
+
+                        h3 {
+                            @media screen and (max-width: 768px) {
+                                font-size: 24px !important;
+                            }
+
+                        }
+
+                        p{
+                            @media screen and (max-width: 768px) {
+                                font-size: 15px !important;
+                            }
+                        }
+
+
 
                         p {
                             display: flex;
@@ -115,6 +193,10 @@
 
             @media screen and (max-width: 1280px) {
                 width: 90%;
+            }
+
+            @media screen and (max-width: 576px) {
+                padding: 25px;
             }
 
             &-title {
@@ -216,6 +298,10 @@
                     justify-content: center;
                     align-items: center;
                     border-radius: 12px;
+
+                    @media screen and (max-width: 576px) {
+                        width: 70%;
+                    }
 
                     &-btn {
                         font-size: 18px;

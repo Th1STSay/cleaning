@@ -30,11 +30,8 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "html-import-partials": "^1.0.1",
-
-    "sass": "^1.75.0",
-
     "node-sass": "^9.0.0",
-
+    "sass": "^1.75.0",
     "waypoints": "^4.0.1"
   }
 }
