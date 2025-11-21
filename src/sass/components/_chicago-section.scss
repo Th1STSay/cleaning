@@ -3,13 +3,12 @@
     justify-content: center;
     background-color: #064087;
     color: white;
-    background: linear-gradient(
-        to bottom, 
-        rgba(6, 64, 135, 1) 0%,      /* початок */
-        rgba(6, 64, 135, 1) 62%,     /* колір тримається до 70% */
-        rgba(233, 246, 255, 1) 62%,  /* початок другого кольору від 70% */
-        rgba(233, 246, 255, 1) 100%  /* кінець */
-    );
+    background: linear-gradient(to bottom,
+            rgba(6, 64, 135, 1) 0%,
+            rgba(6, 64, 135, 1) 80%,
+            /* основний колір більший */
+            rgba(233, 246, 255, 1) 80%,
+            rgba(233, 246, 255, 1) 100%);
 
     &__content {
         display: grid;
@@ -17,7 +16,15 @@
         padding-top: 100px;
         padding-bottom: 100px;
 
+        @media screen and (max-width: 576px) {
+            padding-bottom: 35px;
+        }
+
         &-main {
+
+            @media screen and (max-width: 1280px) {
+                width: auto;
+            }
 
             &-head {
 
@@ -25,6 +32,20 @@
                     font-weight: 700;
                     font-size: 40px;
                     padding-bottom: 60px;
+
+                    @media screen and (max-width: 991px) {
+                        h2 {
+                            font-size: 30px;
+                        }
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        h2 {
+                            font-size: 21px;
+                        }
+
+                        width: auto;
+                    }
                 }
 
                 &-cities {
@@ -34,6 +55,22 @@
                     font-size: 24px;
                     gap: 25px;
                     padding-bottom: 164px;
+
+                    @media screen and (max-width: 991px) {
+                        span {
+                            font-size: 18px;
+                        }
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+
+                    @media screen and (max-width: 576px) {
+                        padding-bottom: 50px;
+                    }
 
                     &-Naperville {
                         display: flex;
@@ -78,10 +115,41 @@
                     }
                 }
             }
+
+            &-head-btn {
+                @media screen and (max-width: 768px) {
+                    img {
+                        width: 70%;
+                    }
+
+                    width: auto;
+                }
+
+            }
         }
 
         &-map {
             padding-left: 54px;
+
+            @media screen and (max-width: 991px) {
+                img {
+                    width: 387px;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                img {
+                    width: 309px;
+                }
+
+                padding-left: 0;
+            }
+
+            @media screen and (max-width: 576px) {
+                img {
+                    width: 240px;
+                }
+            }
         }
     }
 }
