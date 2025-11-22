@@ -35,57 +35,85 @@
                 gap: 16px;
             }
 
-            p{
+            p {
                 color: white;
                 padding-bottom: 20px;
                 font-size: 22px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 18px !important;
+                }
             }
 
-            a{
+            a {
                 color: white;
                 font-size: 16px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 14px !important;
+                }
             }
         }
 
-        &-col3{
+        &-col3 {
             display: flex;
             flex-direction: column;
             gap: 10px;
             height: 270px;
             color: white;
 
-            &-heading{
-                padding-bottom: 30px;
-                color: white;
-                font-size: 22px !important; 
+            p {
+                @media screen and (max-width: 768px) {
+                    font-size: 18px !important;
+                }
             }
 
-            &-contacts{
+            &-heading {
+                padding-bottom: 30px;
+                color: white;
+                font-size: 22px !important;
 
-                &-mail{
+
+            }
+
+            &-contacts {
+
+                &-mail {
                     display: flex;
                     align-items: center;
                     flex-direction: row;
                     gap: 10px;
                     padding-bottom: 25px;
+
+                    span{
+                        @media screen and (max-width: 768px) {
+                            font-size: 14px !important;
+                        }
+                    }
                 }
 
-                &-adress{
+                &-adress {
                     display: flex;
                     flex-direction: row;
                     gap: 10px;
                     padding-bottom: 25px;
 
-                    img{
+                    img {
                         width: 28px;
                         height: 28px;
                         margin-left: -2px;
                     }
+
+                    span{
+                        @media screen and (max-width: 768px) {
+                            font-size: 13px !important;
+                        }
+                    }
                 }
             }
 
-            &-phone{
-                width: 215px;
+            &-phone {
+                width: 85%;
                 height: 45px;
                 background-color: #09694c;
                 display: flex;
@@ -96,36 +124,36 @@
                 padding-top: 14px;
                 padding-bottom: 14px;
 
-                button{
+                button {
                     background: none;
-                        border: none;
-                        color: white;
+                    border: none;
+                    color: white;
                 }
 
-                a{
+                a {
 
-                    img{
+                    img {
                         width: 16px;
                         height: 16px;
                     }
                 }
             }
 
-            &-socialmedias{
+            &-socialmedias {
                 padding-top: 20px;
 
-                a{
+                a {
                     display: flex;
                     gap: 20px;
                 }
             }
 
-            a{
+            a {
                 color: white;
                 font-size: 16px;
             }
 
-            p{
+            p {
                 color: white;
                 font-size: 16px;
             }

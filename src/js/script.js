@@ -1,4 +1,7 @@
 var swiper = new Swiper(".beforeAfterSlider", {
+  slidesPerView: 1,
+  spaceBetween: 0, // без відступів (щоб не було видно другого)
+  centeredSlides: false, // НЕ центруємо (бо центрування показує частину сусіднього слайда)
   navigation: {
     nextEl: ".right",
     prevEl: ".left",
@@ -12,6 +15,17 @@ var swiper = new Swiper(".SliderReviews", {
   navigation: {
     nextEl: ".right",
     prevEl: ".left",
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    480: {
+      slidesPerView: 1,
+    },
   },
 });
 

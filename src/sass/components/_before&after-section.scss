@@ -5,6 +5,10 @@
     &__content {
         padding-top: 90px;
         padding-bottom: 80px;
+        overflow: hidden;
+        width: 100% !important;
+        height: auto !important;
+        display: block;
 
         &-title {
             display: inline-flex;
@@ -42,6 +46,18 @@
                         rgba(10, 109, 79, 1),
                         1px solid;
                     border-radius: 8px;
+                }
+            }
+        }
+
+        &-wrapper {
+            
+            .swiper-slide{
+                width: 100% !important;
+
+                img{
+                    width: 100%;
+                    display: block;
                 }
             }
         }

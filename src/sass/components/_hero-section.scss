@@ -33,6 +33,10 @@
                 color: #fff;
                 font-size: 56px;
                 margin-bottom: 35px;
+
+                @media screen and (max-width: 1400px) {
+                    font-size: 40px;
+                }
             }
 
             p {

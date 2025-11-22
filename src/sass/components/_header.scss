@@ -18,14 +18,32 @@
             gap: 200px;
         }
 
-        @media screen and (max-width: 1640px) {}
+        @media screen and (max-width: 1400px) {
+            gap: 130px;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 1200px) {
+            gap: 100px;
+        }
+
+        &-logo {}
 
         &-menu {
             display: flex;
             align-items: center;
             gap: 35px;
 
+            @media screen and (max-width: 1200px) {
+                visibility: hidden;
+                width: 0%;
+            }
+
             li {
+                .home {
+                    white-space: nowrap;
+                }
+
                 a {
                     color: white;
                 }
@@ -41,6 +59,11 @@
             justify-content: center;
             gap: 9px;
             border-radius: 4px;
+
+            @media screen and (max-width: 1200px) {
+                visibility: hidden;
+                width: 0%;
+            }
 
             a {
                 color: white;
