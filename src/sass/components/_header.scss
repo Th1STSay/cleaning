@@ -24,10 +24,18 @@
         }
 
         @media screen and (max-width: 1200px) {
-            gap: 100px;
+            display: flex;
+            justify-content: center;
         }
 
-        &-logo {}
+        @media screen and (max-width: 576px) {
+            gap: 0px;
+            padding: 20px 0px 20px 0px;
+        }
+
+        &-logo {
+              
+        }
 
         &-menu {
             display: flex;
@@ -35,8 +43,7 @@
             gap: 35px;
 
             @media screen and (max-width: 1200px) {
-                visibility: hidden;
-                width: 0%;
+                display: none;
             }
 
             li {
@@ -61,8 +68,7 @@
             border-radius: 4px;
 
             @media screen and (max-width: 1200px) {
-                visibility: hidden;
-                width: 0%;
+                display: none;
             }
 
             a {
