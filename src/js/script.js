@@ -17,13 +17,13 @@ var swiper = new Swiper(".SliderReviews", {
     prevEl: ".left",
   },
   breakpoints: {
-    1200: {
+    1400: {
       slidesPerView: 3,
     },
-    768: {
+    1200: {
       slidesPerView: 2,
     },
-    480: {
+    768: {
       slidesPerView: 1,
     },
   },

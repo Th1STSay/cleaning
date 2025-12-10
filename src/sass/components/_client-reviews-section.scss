@@ -3,7 +3,6 @@
     justify-content: center;
     flex-direction: column;
     gap: 30px;
-    height: 600px;
     background-color: #e9f6ff;
 
     &__content {
@@ -53,6 +52,15 @@
             font-size: 18px;
             font-weight: 400;
             padding-bottom: 35px;
+
+            @media screen and (max-width: 1400px) {
+                max-width: 760px;
+            }
+
+            @media screen and (max-width: 1200px) {
+                max-width: 380px;
+                
+            }
 
             img {
                 width: 100%;
